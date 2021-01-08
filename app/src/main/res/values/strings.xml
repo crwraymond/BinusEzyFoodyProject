@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Binus EzyFoody</string>
+    <string name="Title">Binus EzyFoody</string>
+    <string name="Snack">Snack</string>
+    <string name="title_activity_my_order">ScrollingActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

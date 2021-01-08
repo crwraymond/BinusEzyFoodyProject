@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/binus"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="@string/Title"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/black"/>
+
+    <Button
+        android:id="@+id/buttonMyOrder"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="My Order"
+        android:onClick="onClickMyOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texx"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:backgroundTint="@android:color/holo_green_light"/>
+
+    <ImageButton
+        android:id="@+id/buttonDrinks"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:onClick="onClickDrink"
+        android:layout_below="@+id/buttonMyOrder"
+        android:layout_margin="70dp"
+        android:background="@color/white"
+        android:text="Drinks"
+        android:textAllCaps="false" />
+
+    <ImageButton
+        android:id="@+id/buttonSnack"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:text="@string/Snack"
+        android:layout_toRightOf="@+id/buttonDrinks"
+        android:layout_below="@+id/buttonMyOrder"
+        android:onClick="onClickSnack"
+        android:textAllCaps="false"
+        android:layout_marginTop="70dp"
+        android:background="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonFoods"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:text="Foods"
+        android:onClick="onClickFood"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:layout_below="@+id/buttonDrinks"
+        android:layout_marginLeft="70dp" />
+
+    <ImageButton
+        android:id="@+id/buttonTopUp"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:text="TopUp"
+        android:layout_below="@+id/buttonSnack"
+        android:layout_toRightOf="@id/buttonFoods"
+        android:onClick="onClickTopUp"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:layout_margin="70dp"/>
+    <Button
+        android:id="@+id/History"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="History"
+        android:onClick="onClickHistory"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/buttonTopUp"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:backgroundTint="@android:color/holo_green_light"/>
+
+    <Button
+        android:id="@+id/other"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="Other Restaurant"
+        android:onClick="onClickOther"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/History"
+        android:layout_below="@+id/buttonTopUp"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:backgroundTint="@android:color/holo_green_light"/>
+
+</RelativeLayout>

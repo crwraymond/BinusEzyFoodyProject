@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/binus"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:text="Binus EzyFood: Foods"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/buttonMyOrder"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="My Order"
+            android:onClick="onClickMyOrder"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/food"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            android:backgroundTint="@android:color/holo_green_light"/>/>
+
+        <ImageButton
+            android:id="@+id/nasigoreng"
+            android:layout_width="100dp"
+            android:layout_height="71dp"
+            android:onClick="onClickNasiGoreng"
+            android:layout_below="@+id/buttonMyOrder"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/white"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nasigoreng"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:text="Nasi Goreng\nRp. 25000"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/batagor"
+            android:layout_width="100dp"
+            android:layout_height="71dp"
+            android:onClick="onClickBatagor"
+            android:layout_toRightOf="@+id/nasigoreng"
+            android:layout_below="@+id/buttonMyOrder"
+            android:textAllCaps="false"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nasigoreng"
+            android:layout_marginLeft="255dp"
+            android:text="Batagor\nRp. 15.000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/mieayam"
+            android:layout_width="100dp"
+            android:layout_height="71dp"
+            android:onClick="onClickMieAyam"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            android:layout_below="@+id/nasigoreng"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mieayam"
+            android:layout_marginLeft="80dp"
+            android:text="Mie Ayam\nRp. 20.000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/ayamgoreng"
+            android:layout_width="100dp"
+            android:layout_height="71dp"
+            android:onClick="onClickAyamGoreng"
+            android:layout_below="@+id/batagor"
+            android:layout_toRightOf="@id/mieayam"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            android:layout_margin="70dp" />
+
+        <TextView
+            android:id="@+id/textAyamGoreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mieayam"
+            android:layout_marginLeft="255dp"
+            android:text="Ayam Gorng\nRp. 17.000"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textAyamGoreng"
+            android:onClick="onClickMainMenu"/>
+    </RelativeLayout>
+</ScrollView>

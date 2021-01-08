@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/binus">
+    <TextView
+        android:id="@+id/drinkOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="Binus EzyFood: Order"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/buttonMyOrder"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="My Order"
+        android:onClick="onClickMyOrder"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/drinkOrder"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:backgroundTint="@android:color/holo_green_light"/>
+
+    <TextView
+        android:id="@+id/air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/buttonMyOrder"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonMyOrder"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/air"
+        android:text="Quantity: "
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/totalJA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="50dp"
+        android:layout_below="@+id/buttonMyOrder"
+        android:layout_toRightOf="@+id/qty"
+        android:layout_marginTop="18dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/orderMore"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/buttonMyOrder"
+        android:layout_alignEnd="@+id/buttonMyOrder"
+        android:layout_alignRight="@+id/buttonMyOrder"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/white"
+        android:onClick="onClickOrderMore"
+        android:text="Order More"
+        android:textAllCaps="false" />
+</RelativeLayout>

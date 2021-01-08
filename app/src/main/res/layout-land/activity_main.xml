@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/binus"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/texx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:text="@string/Title"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textColorHighlight="@color/black"/>
+
+    <Button
+        android:id="@+id/buttonMyOrder"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="My Order"
+        android:onClick="onClickMyOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texx"
+        android:textAllCaps="false"
+        android:background="@color/white"
+        android:backgroundTint="@android:color/holo_green_light"/>
+
+    <ImageButton
+        android:id="@+id/buttonDrinks"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/buttonMyOrder"
+        android:layout_alignStart="@+id/buttonMyOrder"
+        android:layout_alignLeft="@+id/buttonMyOrder"
+        android:layout_marginStart="-143dp"
+        android:layout_marginLeft="-143dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/white"
+        android:onClick="onClickDrink"
+        android:text="Drinks"
+        android:textAllCaps="false" />
+
+    <ImageButton
+        android:id="@+id/buttonSnack"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/buttonMyOrder"
+        android:layout_marginLeft="212dp"
+        android:layout_marginTop="79dp"
+        android:layout_toRightOf="@+id/buttonDrinks"
+        android:background="@color/white"
+        android:text="@string/Snack"
+        android:textAllCaps="false" />
+
+    <ImageButton
+        android:id="@+id/buttonFoods"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:layout_alignTop="@+id/buttonDrinks"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="214dp"
+        android:layout_marginRight="214dp"
+        android:layout_toStartOf="@+id/buttonTopUp"
+        android:layout_toLeftOf="@+id/buttonTopUp"
+        android:background="@color/white"
+        android:text="Foods"
+        android:textAllCaps="false" />
+
+    <ImageButton
+        android:id="@+id/buttonTopUp"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/buttonSnack"
+        android:layout_alignEnd="@+id/buttonSnack"
+        android:layout_alignRight="@+id/buttonSnack"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/white"
+        android:text="TopUp"
+        android:textAllCaps="false" />
+</RelativeLayout>
+
+</ScrollView>
