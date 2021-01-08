@@ -35,7 +35,7 @@ public class Drink extends AppCompatActivity {
         ImageButton Jap = (ImageButton) findViewById(R.id.jusapel);
         ImageButton Jal = (ImageButton) findViewById(R.id.jusalpukat);
         ImageButton Jmg = (ImageButton) findViewById(R.id.jusmangga);
-        drink.setBackgroundResource(R.drawable.air);
+        drink.setBackgroundResource(R.drawable.air1);
         Jap.setBackgroundResource(R.drawable.jusapel);
         Jal.setBackgroundResource(R.drawable.jusalpukat);
         Jmg.setBackgroundResource(R.drawable.jusmangga);

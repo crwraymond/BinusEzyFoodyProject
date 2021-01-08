@@ -76,7 +76,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         RBQuantity = intent.getStringExtra("rotiBakar");
         id = intent.getStringExtra("id");
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-        getLocation();
+        if(ActivityCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED)
+        {
+            getLocation();
+        }
+        else
+        {
+            ActivityCompat.requestPermissions(MapsActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+        }
     }
 
     public void getLocation()
